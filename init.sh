@@ -5,7 +5,7 @@ apt update && apt upgrade -y && apt install -y curl gpg ca-certificates tar dirm
 ## Check if binaries are already installed
 cd ~
 if [ ! -f ~/dogecoin-bin/bin/dogecoind ]; then
-    curl -o dogecoin.tar.gz -Lk https://github.com/dogecoin/dogecoin/releases/download/v1.10.0/dogecoin-1.10.0-linux64.tar.gz
+    curl -o dogecoin.tar.gz -Lk https://github.com/dogecoin/dogecoin/releases/download/v1.14.0/dogecoin-1.14.0-x86_64-linux-gnu.tar.gz
     if [ $? -eq 0 ]; then
         tar -xvf dogecoin.tar.gz
         ##Rename folder appropriately
